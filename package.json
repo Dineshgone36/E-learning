@@ -1,0 +1,39 @@
+{
+  "name": "e-learning",
+  "version": "1.0.0",
+  "description": "E learning Website",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "Apurva Savaj",
+  "license": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "gravatar": "^1.8.0",
+    "html-webpack-plugin": "^5.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "mini-css-extract-plugin": "^2.8.1",
+    "mongoose": "^5.6.5",
+    "multer": "^1.4.2",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.0",
+    "pnp-webpack-plugin": "^1.7.0",
+    "react-dev-utils": "^12.0.1",
+    "validator": "^13.11.0",
+    "webpack-dev-server": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
